@@ -1,0 +1,81 @@
+﻿@{
+    ViewBag.Title = "register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    }
+<form name="htmlform" method="post" >
+    <div class="container ">
+        <div class="box">
+            <table width="450">
+                <tr>
+                    <td valign="top">
+                        <label for="first_name">Full Name *</label>
+                    </td>
+                    <td valign="top">
+                        <input type="text" name="first_name" maxlength="50" size="30"><br />
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td valign="top">
+                        <label for="email">Email Address *</label>
+                    </td>
+                    <td valign="top">
+                        <input type="text" name="email" maxlength="80" size="30"><br />
+                    </td>
+
+                </tr>
+                <tr>
+                    <td valign="top">
+                        <label for="bloodgroup">Blood group*</label>
+                    </td>
+                    <td valign="top">
+                        <select name="bloodgroup" id="bloodgroup" class='textE'>
+                        <option value="0">-Select your bloodgroup-</option>
+                        <option value="A+">A+</option>
+                        <option value="B+">B+</option>
+                        <option value="AB+">AB+</option>
+                        <option value="O+">O+</option>
+                        <option value="A-">A-</option>
+                        <option value="A-">A-</option>
+                        <option value="B-">B-</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O-">O-</option>
+                        </select>  
+
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">
+                        <label for="city">City*</label>
+                    </td>
+                    <td valign="top">
+                        <input type="text" name="city" maxlength="30" size="30"><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">
+                        <label for="contactno1">Contact Number*</label>
+                    </td>
+                    <td valign="top">
+                        <input type="text" name="contactno1" maxlength="30" size="30"><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">
+                        <label for="contactno2">Alt Contact Number </label>
+                    </td>
+                    <td valign="top">
+                        <input type="text" name="contactno2" maxlength="50" size="30"><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:center">
+                        <br />
+                        <input type="submit" value="register"><br />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</form>
